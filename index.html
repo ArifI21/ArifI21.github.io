@@ -15,13 +15,10 @@
         <nav>
             <ul id="nav-ul">
                 <li>
-                    <a href="/home" class="topnav">Home</a>
+                    <a href="#about" class="topnav">About</a>
                 </li>
                 <li>
-                    <a href="/about" class="topnav">About</a>
-                </li>
-                <li>
-                    <a href="/contact" class="topnav">Contact</a>
+                    <a href="#description" class="topnav">Form</a>
                 </li>
             </ul>
         </nav>
@@ -37,82 +34,108 @@
                         <ul>
                             <li><a href="">month filter</a></li>
                             <li><a href="">month filter</a></li>
-                            <li><a href="">month filter</a></li>
-                        </ul>
-                    </nav>
-                </section>
-                <section>
-                    <h4>Filter by page</h4>
-                    <nav>
-                        <ul>
-                            <li><a href="">page filter</a></li>
-                            <li><a href="">page filter</a></li>
-                            <li><a href="">page filter</a></li>
                         </ul>
                     </nav>
                 </section>
             </aside>
             <div>
-                <article>
+                <article id="about">
                     <header>
                         <h2>About Me</h2>  
-                        <h3>Read time: 5 minutes</h3>  
+                        <h3>Read time: 2 minutes</h3>  
                     </header>
                     <main>
                         <p>Hi, my name is Arif. Thank you for viewing my website. I am currently studying MSc Computer Science after recently graduating with a 3-year BSc (Hons) Computer Games Technology degree at Manchester Metropolitan University. Throughout my undergraduate degree, I had an excellent attendance record for all my lessons and I have learnt how to develop games using Unity. I have created several games either as an individual or as part of a team. One of my strengths is that I am passionate and committed to working with computers and technology and I can work individually or as a team. I am currently learning about Java in my Master's degree and looking for work opportunities to gain experience that can help me develop my skills for my career.</p>
+                        <p>For hobbies, I like to watch football and play games. Below is a form based around games to get an understanding of what type of gamer you are.</p>
                         <h2>Author: Arif Iqbal</h2>
                         <h3>Contact Me</h3>
                         <a href="https://www.linkedin.com/in/arifiqbal1a/" target="_blank">LinkedIn Profile</a>
                     </main>
                 </article>
-            </div>
-            
-            
+            </div>      
         </div>
-        
-        <h2>Sign Up!</h2>
-        <form action="">
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="first_name" required>
-            <br>
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
-
-            <label for="favourite_animal">Favourite animal:</label><br>
-            <input type="radio" id="dog" name="favourite_animal" value="dog">
-            <label for="dog">Dog</label><br>
-            <input type="radio" id="cat" name="favourite_animal" value="cat">
-            <label for="cat">Cat</label><br><br>
-            <input type="radio" id="hedgehog" name="favourite_animal" value="hedgehog">
-            <br>
-
-            <label for="hedgehog"> Hedgehog </label><br><br>
-            <label for="country">Country:</label><br>
-            <select id="country" name="country">
-            <option value="england">England</option>
-            <option value="scotland">Scotland</option>
-            <option value="Wales">Wales</option>
-            <option value="northern_ireland">Northern Ireland</option>
-            </select><br><br>
-            
-            <label for="bio">Biography:</label><br>
-            <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
-            <input type="checkbox" id="subscribe" name="subscribe">
-            <label for="subscribe">Subscribe to newsletter</label><br><br>
-            <input type="submit" value="Submit">
-        </form>
+        <br>
+        <div class="central">
+            <p id="description"><b>Welcome to the survey. In this survey, there are questions based around games.</b></p>
+    
+            <form id="survey-form">
+                <label id="name-label">
+                    Name:
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                </label>
+                <label id="email-label">
+                    Email:
+                    <input id="email" type="email" placeholder="Enter your email" required>
+                </label>
+                <label id="number-label">
+                    Age:
+                    <input id="number" type="number" min="1" max="99" placeholder="Age" required>
+                </label>
+    
+                <p>
+                    What is your favourite genre in games? <select id="dropdown">
+                        <option value="Select an option" selected disabled>Select an option</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Combat">Combat</option>
+                        <option value="Competitive">Competitive</option>
+                        <option value="Puzzle">Puzzle</option>
+                        <option value="Racing">Racing</option>
+                    </select>
+                </p>
+    
+                <p id="radio_buttons">How long do you spend playing games each day?</p>
+                <label for="radio_buttons">
+                    <input id="radio_buttons" value="6+" type="radio" name="radio_buttons" checked>6+ hours
+                </label>
+                <br>
+                <label for="radio_buttons">
+                    <input id="radio_buttons" value="3-6" type="radio" name="radio_buttons">3-6 hours
+                </label>
+                <br>
+                <label for="radio_buttons">
+                    <input id="radio_buttons" value="0-3" type="radio" name="radio_buttons">0-3 hours
+                </label>
+                <br>
+    
+                <p id="checkboxes">What are your favourite games that you like to play? (Check all that apply)</p>
+                <label for="checkboxes">
+                    <input id="checkboxes" value="gta" type="checkbox">GTA 5
+                </label>
+                <br>
+                <label for="checkboxes">
+                    <input id="checkboxes" value="fifa" type="checkbox">FC 24
+                </label>
+                <br>
+                <label for="checkboxes">
+                    <input id="checkboxes" value="rl" type="checkbox">Rocket League
+                </label>
+                <br>
+                <label for="checkboxes">
+                    <input id="checkboxes" value="cod" type="checkbox">Call of Duty
+                </label>
+                <br>
+                <label for="checkboxes">
+                    <input id="checkboxes" value="mc" type="checkbox">Minecraft
+                </label>
+                <br>
+                <label for="checkboxes">
+                    <input id="checkboxes" value="lol" type="checkbox">League of Legends
+                </label>
+                <br>
+    
+                <p>If there are any games or genres that you play that are not mentioned above or you would like to talk about, please put them in the comment box below.<p>
+                <textarea placeholder="Enter your comment(s) here..."></textarea>
+                <br>
+    
+                <p>If you are happy with all the answers provided, press the submit button. Thank you for completing the survey.</p>
+                <button id="submit" type="submit">SUBMIT</button>
+            </form>
+        </div>
     </main>
 
     <footer>
         <!-- footer -->
-        <h2>Arif's Website</h2>
+        <h2>&copy; Arif's Website, 2024</h2>
         <section>
             <nav>
                 <ul id="footer-ul">
